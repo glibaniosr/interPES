@@ -10,8 +10,8 @@ basename2	= state2.scan
 dir_name1	= state1
 dir_name2	= state2 
 # headers with the ORCA input flags
-head_file1	= state1-keys.txt
-head_file2	= state2-keys.txt	
+head_file1	= state1-top.txt
+head_file2	= state2-top.txt	
 # name of the output containing all the interpolated xyz structures
 allxyz_file	= pes.all.xyz
 # interpolation data 

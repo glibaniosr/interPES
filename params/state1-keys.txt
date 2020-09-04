@@ -1,0 +1,8 @@
+! RKS TPSSh def2-SV(P) def2/J RICOSX
+! GRID5 NofinalGrid
+
+%scf
+    MaxIter 300
+end
+
+* xyz 1 1
