@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
 from contextlib import contextmanager
 import os
@@ -38,8 +38,6 @@ def getparams(paramsFile):
                     h1File = data[2]
                 elif line.startswith("head_file2"):
                     h2File = data[2]
-                elif line.startswith("bot_file"):
-                    botFile = data[2]
                 elif line.startswith("allxyz_file"):
                     allxyzFile = data[2]
                 elif line.startswith("nAtoms"):
@@ -50,7 +48,7 @@ def getparams(paramsFile):
                     nProcs = int(data[2])
 
     params = [state1File, state2File, base1File, base2File, dir1, dir2, 
-    h1File, h2File, botFile, allxyzFile, nAtoms, nPoints, nProcs]
+    h1File, h2File, allxyzFile, nAtoms, nPoints, nProcs]
 
     return params
 
@@ -92,7 +90,6 @@ def extcoord(inFile):
     allCoord = []
     with open(inFile,'r') as file:
         lines = file.readlines()
-        nAtoms = int(lines[0])
         del lines[0]
         del lines[0]
         for line in lines:
