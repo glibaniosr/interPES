@@ -1,0 +1,17 @@
+# Parameters file for the genPES script
+# This file and all other specified below should be in a directory called "params"
+# Files and directories parameters
+state1_xyz	= singlet.xyz
+state2_xyz	= triplet.xyz
+basename1	= singlet.scan  	
+basename2	= triplet.scan  	
+dir_name1	= singlet
+dir_name2	= triplet 
+head_file1	= top1.txt
+head_file2	= top2.txt
+bot_file	= bot.txt 		
+allxyz_file	= pes.all.xyz
+# PES calculation parameters
+nAtoms		= 20		
+nPoints		= 15		
+nProcs		= 10

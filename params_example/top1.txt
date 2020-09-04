@@ -1,0 +1,5 @@
+! RKS TPSSh def2-SV(P) def2/J RIJcosx 
+! grid4 NofinalGrid
+! Chelpg
+%scf MaxIter 300 end
+* xyz 1 1
