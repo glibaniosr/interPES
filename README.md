@@ -7,7 +7,7 @@ calculations.
 
 ## Usage
 
-To use interPES you need a directory named "params" in your current work folder containing a parameter
+To use interPES you need a directory named _params_ in your current work folder containing a parameter
 file as the example.
 
 To run the script:
@@ -16,6 +16,6 @@ To run the script:
 
 ## Results
 
-The script will create two different folders state1 and state2 with separate inputs for each generated coordinates based on two different electronic states (as example). If you do not need two different kind of input just create two different files with same contents (same headers). In the future I will give an option to have this or not.
+The script will create two different folders (name defined in the params file) _state1_ and _state2_ with separate inputs for each generated coordinates based on two different electronic states as example. If you do not need two different kind of input sets just create two different headers files with same contents. The header files contains the keyword for the ORCA inputs (see example). In the future I will give an option to create the ORCA inputs or not have this or not.
 
-Also in the current working directory it will be created a .xyz files with all the structures generated. The structures are separated by a ">", and therefore can also be used in ORCA as a single input with multiple .xyz structures.
+Also in the current working directory it will be created a .xyz file with all the structures generated. The structures are separated by a ">", and therefore can also be used in ORCA as a single input with multiple .xyz structures.
